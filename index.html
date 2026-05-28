@@ -1,199 +1,437 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+
+    <title>가산 바이럴 마케팅 추천 | 실패 없는 직장인 네트워킹 전략</title>
+    <meta name="description" content="가산동 바이럴 마케팅 추천 업체 찾기, 이제 그만 고민하세요. 회사 예산 낭비 없이 확실한 퍼포먼스를 내는 리얼한 홍보 전략과 팁을 공유합니다.">
+    <meta name="keywords" content="가산 바이럴 마케팅 추천, 가산동 홍보대행사, 바이럴 마케팅 비용, 소규모 광고 전략, 직장인 마케팅">
+    <link rel="canonical" href="https://kr-pbn-bp-008.pages.dev">
+
+    <!-- OG / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="가산 바이럴 마케팅 추천: 가식 없는 팩트만">
+    <meta property="og:description" content="회식 자리에서 자꾸만 홍보 이야기를 하게 됨. 가산 바이럴 마케팅 추천과 리얼한 후기를 확인하세요.">
+    <meta property="og:url" content="https://kr-pbn-bp-008.pages.dev">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' font-family='Impact' font-size='80' fill='%23ff3b00' text-anchor='middle' dominant-baseline='middle'%3E가산/바이럴/팩트%3C/text%3E%3C/svg%3E">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "가산 바이럴 마케팅 추천 가이드",
+      "image": "https://kr-pbn-bp-008.pages.dev/assets/hero.png",
+      "telephone": "010-6279-0862",
+      "url": "https://kr-pbn-bp-008.pages.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "QRTECH 가산",
+        "addressRegion": "서울 금천구",
+        "addressCountry": "KR"
+      },
+      "priceRange": "$$"
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* 
+         * CSS DNA: neon-void 
+         * Brutalist / Street Style 
+         */
+        :root {
+            --c-bg: #000000;
+            --c-fg: #ffffff;
+            --c-acc: #ff3b00;
+            --c-sec: #f0f0f0;
+            --f-main: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+            --f-body: 'Courier New', Courier, monospace;
+            --b-wid: 4px;
+            --s-pad: 72px;
+            --s-gap: 48px;
+            --s-sec: 120px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--c-bg);
+            color: var(--c-fg);
+            font-family: var(--f-body);
+            font-size: 18px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 {
+            font-family: var(--f-main);
+            text-transform: uppercase;
+            line-height: 0.9;
+            letter-spacing: -0.02em;
+        }
+
+        h1 { font-size: clamp(3rem, 10vw, 8rem); margin-bottom: 24px; }
+        h2 { font-size: clamp(2.5rem, 6vw, 5rem); margin-bottom: 48px; color: var(--c-acc); }
+        h3 { font-size: 1.5rem; margin-bottom: 16px; border-bottom: 2px solid var(--c-fg); display: inline-block; }
+        p { margin-bottom: 24px; max-width: 70ch; }
+
+        /* UTILS */
+        .text-acc { color: var(--c-acc); }
+        .box {
+            border: var(--b-wid) solid var(--c-fg);
+            padding: 32px;
+            position: relative;
+            background: var(--c-bg);
+            transition: transform 0.2s;
+        }
+        .box:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 8px 8px 0px var(--c-acc);
+        }
+        .btn-brutal {
+            display: inline-block;
+            background: var(--c-acc);
+            color: var(--c-fg);
+            font-family: var(--f-main);
+            font-size: 1.5rem;
+            padding: 16px 32px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 6px 6px 0px var(--c-fg);
+            transition: all 0.1s;
+        }
+        .btn-brutal:active {
+            transform: translate(4px, 4px);
+            box-shadow: 2px 2px 0px var(--c-fg);
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--s-pad);
+            border-bottom: var(--b-wid) solid var(--c-fg);
+            position: sticky;
+            top: 0;
+            background: var(--c-bg);
+            z-index: 100;
+        }
+        .logo {
+            font-family: var(--f-main);
+            font-size: 2rem;
+            background: var(--c-fg);
+            color: var(--c-bg);
+            padding: 0 10px;
+        }
+        .nav-toggle {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        nav ul {
+            display: flex;
+            gap: 32px;
+        }
+        nav a {
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            text-decoration: underline var(--c-acc) 4px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--s-pad);
+            border-bottom: var(--b-wid) solid var(--c-fg);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            right: -5%;
+            width: 40vw;
+            height: 40vw;
+            background: repeating-linear-gradient(
+                45deg,
+                var(--c-acc),
+                var(--c-acc) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            opacity: 0.2;
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--c-acc);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: var(--s-sec) var(--s-pad);
+            border-bottom: var(--b-wid) solid var(--c-fg);
+        }
+
+        /* INTRO (Asymmetric) */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--s-gap);
+        }
+        .intro-visual {
+            background: var(--c-fg);
+            color: var(--c-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            font-family: var(--f-main);
+            transform: rotate(-2deg);
+            margin-top: -40px;
+        }
+
+        /* UGC REVIEWS */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--s-gap);
+        }
+        .review-card {
+            border: var(--b-wid) solid var(--c-fg);
+            background: #111;
+            padding: 24px;
+            position: relative;
+        }
+        .review-card::after {
+            content: '★';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 4rem;
+            color: var(--c-acc);
+            z-index: -1;
+        }
+        .stars { color: var(--c-acc); letter-spacing: 4px; margin-bottom: 12px; }
+        .meta {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 16px;
+            border-top: 1px dashed var(--c-fg);
+            padding-top: 8px;
+        }
+
+        /* SEO CONTENT */
+        .seo-block {
+            background: var(--c-acc);
+            color: var(--c-bg);
+            padding: 48px;
+            border: var(--b-wid) solid var(--c-bg);
+            box-shadow: 10px 10px 0px var(--c-fg);
+            transform: rotate(1deg);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: var(--s-pad);
+            background: var(--c-fg);
+            color: var(--c-bg);
+            text-align: center;
+        }
+        .contact-big {
+            font-size: 3rem;
+            font-family: var(--f-main);
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            :root { --s-pad: 24px; --s-gap: 24px; --s-sec: 48px; }
+            h1 { font-size: 15vw; }
+            h2 { font-size: 12vw; }
+            .nav-toggle { display: block; }
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--c-fg);
+                border-bottom: 4px solid var(--c-acc);
+                display: none;
+                padding: 24px;
+            }
+            nav.active { display: block; }
+            nav ul { flex-direction: column; }
+            nav a { color: var(--c-bg); font-size: 1.5rem; }
+            .intro-grid { grid-template-columns: 1fr; }
+            .intro-visual { display: none; }
+            .seo-block { transform: none; }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
+
     <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+        <div class="logo">GASAN_BLOG</div>
+        <div class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('active')">/// MENU</div>
+        <nav>
+            <ul>
+                <li><a href="#intro">인트로</a></li>
+                <li><a href="#reviews">리얼 후기</a></li>
+                <li><a href="#strategy">전략 노트</a></li>
+                <li><a href="tel:01062790862" style="color:var(--c-acc);">010-6279-0862</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tagline">SALARYMAN'S GUIDE TO VIRAL SUCCESS</span>
+                <h1>가산 바이럴<br>마케팅<br><span class="text-acc">추천</span> 리스트</h1>
+                <p style="font-size: 1.2rem; max-width: 500px;">
+                    거창한 PPT는 필요 없습니다. 가산디지털단지에서 돈 벌려면, <br>
+                    '찐' 홍보가 답입니다. 회사 예산 날리지 말고 여기부터 보세요.
+                </p>
+                <br>
+                <a href="tel:01062790862" class="btn-brutal">상담하기 (NO 잼민이)</a>
+            </div>
+        </section>
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
+        <section id="intro">
+            <div class="intro-grid">
+                <div>
+                    <h2>왜 우리는<br>가산을<br>고집할까요?</h2>
+                    <p>
+                        솔직히 말해봅시다. 강남, 홍대... 다 비싸고 실속 없습니다. 
+                        가산은 이제 서울의 중심이자, 실용주의의 성지입니다.
+                    </p>
+                    <p>
+                        <strong>가산 바이럴 마케팅 추천</strong>을 찾을 때 중요한 건 화려한 포트폴리오가 아닙니다. 
+                        '누가 뭐래도 내 돈이니까'라는 마인드.
+                        <br><br>
+                        저희는 소위 '돈 안 되는' 방식은 배제했습니다. 
+                        블로거 밥값만 주는 대행사는 거르세요.
+                        리뷰를 남기고 실제 구매 전환이 일어나는 리얼한 바이럴, 그걸 원하죠?
+                    </p>
+                </div>
+                <div class="intro-visual">
+                    FACT ONLY<br>NO B.S.
+                </div>
+            </div>
+        </section>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
+        <section id="reviews">
+            <h2>UGC / <span class="text-acc">리빙Proof</span></h2>
+            <div class="review-grid">
+                <!-- Card 1 -->
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3>이달의 미션 완료</h3>
+                    <p>
+                        가산동 사무실 리모델링 홍보 건이었습니다. 
+                        처음엔 '이런 게 먹히나?' 했는데, 지역 직장인 타겟 바이럴이 진짜 효과 쩌네요.
+                        점심시간에 지인들한테 추천받았다고 함. 효율 최강.
+                    </p>
+                    <div class="meta">
+                        작성자: 김과장_3년차<br>
+                        날짜: 2023.10.12
+                    </div>
+                </article>
 
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
+                <!-- Card 2 -->
+                <article class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <h3>가성비 인정</h3>
+                    <p>
+                        다른 대행사들은 견적부터 천만원씩 부르는데, 여기는 규모에 맞게 제안해줘서 좋았음.
+                        <strong>가산 바이럴 마케팅 추천</strong> 리스트 상위에 있을 만함. 
+                        담당자분도 소통 빨라서 스트레스 1도 없음.
+                    </p>
+                    <div class="meta">
+                        작성자: 스타트업_CEO<br>
+                        날짜: 2023.11.05
+                    </div>
+                </article>
 
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-        </div>
-      </div>
+                <!-- Card 3 -->
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3>재계약 확정</h3>
+                    <p>
+                        오픈런 이벤트 바이럴 돌렸는데 서버 터질 뻔함 ㅋㅋㅋ
+                        역시 지역 밀착형 홍보가 답이다. 가산역 유동인구 타겟 정확함. 
+                        다음 분기에도 무조건 여기랑 작업할 예정.
+                    </p>
+                    <div class="meta">
+                        작성자: 카페사장_민수<br>
+                        날짜: 2023.12.01
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="strategy">
+            <div class="seo-block">
+                <h2>가산동 바이럴 전략 노트</h2>
+                <p>
+                    <strong>가산 바이럴 마케팅 추천</strong>을 검색하는 당신은 이미 절반은 성공한 겁니다.
+                    정보의 홍수 속에서 올바른 방향을 잡으려 하니까요.
+                </p>
+                <p>
+                    1. <strong>지역 거점 확보:</strong> 가산디지털단지는 특정 시간대 유동인구가 폭발합니다. 출퇴근길, 점심시간 공략이 필수입니다.<br>
+                    2. <strong>직장인 타겟팅:</strong> 주변 오피스 상주 인구의 니즈를 파악한 콘텐츠가 '공감'을 얻습니다.<br>
+                    3. <strong>과장 금지:</strong> 직장인들은 본능적으로 거짓을 알아챕니다. 팩트 기반의 리뷰가 장기적으로 브랜드를 지킵니다.
+                </p>
+                <br>
+                <p style="font-weight: bold; font-size: 1.2rem;">
+                    막연한 광고비 지출은 이제 그만. 데이터와 경험으로 무장한 파트너를 만나세요.
+                </p>
+            </div>
+        </section>
     </main>
+
     <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+        <span class="contact-big">010-6279-0862</span>
+        <p>
+            문의: kr-pbn-bp-008@pages.dev<br>
+            서울특별시 금천구 가산디지털2로 (QRTECH 가산)<br>
+            Copyright © 2024 Gasan Viral Strategy. All rights reserved.
+        </p>
+        <br>
+        <div style="font-size: 0.8rem; opacity: 0.5;">
+            DESIGN SYSTEM: BRUTALIST / THEME: NEON-VOID
+        </div>
     </footer>
-  </div>
+
 </body>
 </html>
