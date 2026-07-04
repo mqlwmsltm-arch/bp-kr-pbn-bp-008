@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-kr-pbn-bp-008/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <loc>https://gasan-web-marketing.pbn-builder.xyz/</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-kr-pbn-bp-008/posts/field_note-001-1997qk1.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <loc>https://gasan-web-marketing.pbn-builder.xyz/blog.html</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-kr-pbn-bp-008/posts/guide-001-14rz6fm.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <loc>https://gasan-web-marketing.pbn-builder.xyz/about.html</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-kr-pbn-bp-008/posts/qa-002-14rz6fm.html</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-kr-pbn-bp-008/feed.xml</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
